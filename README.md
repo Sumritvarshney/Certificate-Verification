@@ -34,7 +34,7 @@ Ensure you have **Node.js**, **MetaMask**, and a preferred smart contract deploy
 2. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/certificate-dapp.git
+   git clone https://github.com/akhilkailas017/Certificate-dApp.git
    cd certificate-dapp
    ```
 
