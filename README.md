@@ -15,34 +15,46 @@ To get the Certificate DApp up and running on your local machine, follow these s
 
 ### Prerequisites
 
-Ensure you have **Node.js** and **MetaMask** installed.
+Ensure you have **Node.js**, **MetaMask**, and a preferred smart contract deployment tool installed.
+
+### Smart Contract Deployment
+
+1. **Deploy the Smart Contract:**
+
+   - Deploy the `Cert.sol` smart contract located in the `contracts` folder using your preferred deployment application (e.g., **Hardhat**, **Truffle**, **Remix**, etc.).
+
+   - After deploying, copy the contract ABI from the generated `Cert.json` file. Depending on your deployment tool, this file will be generated in the corresponding `artifacts` or `build` folder.
+
+   - Paste the ABI into the `Cert.json` file located in the `src/scdata` folder of your project.
+
+   - Copy the deployed contract address and paste it into the `deployed_addresses.json` file in the `src/scdata` folder.
 
 ### Installation
 
-1. **Clone the repository:**
+2. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/akhilkailas017/Certificate-dApp.git
+   git clone https://github.com/your-username/certificate-dapp.git
    cd certificate-dapp
    ```
 
-2. **Install the dependencies:**
+3. **Install the dependencies:**
 
    ```bash
    npm install
    ```
 
-3. **Start the development server:**
+4. **Start the development server:**
 
    ```bash
    npm run dev
    ```
 
-4. **Connect MetaMask:**
+5. **Connect MetaMask:**
    - Open MetaMask in your browser.
    - Connect to the correct network where the smart contract is deployed.
 
-5. **Done!** Now you can start issuing and viewing certificates on the blockchain.
+6. **Done!** Now you can start issuing and viewing certificates on the blockchain.
 
 ## 🔗 Connecting to MetaMask
 
@@ -53,8 +65,10 @@ Ensure you have **Node.js** and **MetaMask** installed.
 ## 📜 Smart Contract Details
 
 - **Technology Used:** React, Solidity
-- **Smart Contract Deployment:** Deployed using Hardhat Ignition.
-- **Smart Contract ABI and Address:** Already integrated within the DApp for seamless interaction.
+- **Smart Contract Deployment:** Can be deployed using **Hardhat**, **Truffle**, **Remix**, or any preferred application.
+- **Smart Contract ABI and Address:** 
+  - ABI: Stored in `src/scdata/Cert.json`.
+  - Address: Stored in `src/scdata/deployed_addresses.json`.
 
 ## 👤 Admin Access
 
@@ -66,7 +80,6 @@ Ensure you have **Node.js** and **MetaMask** installed.
 - **Frontend:** React.js
 - **Blockchain:** Ethereum
 - **Smart Contract Language:** Solidity
-- **Smart Contract Deployment:** Hardhat Ignition
 - **Wallet Integration:** MetaMask
 
 ## 📝 Usage
