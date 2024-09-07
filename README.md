@@ -96,7 +96,8 @@ Ensure you have **Node.js**, **MetaMask**, and a preferred smart contract deploy
 
 ## 🎥 Demo Video
 
-[![Certifcate Dapp](https://img.youtube.com/vi/j5krMRJRKiDY/0.jpg)](https://www.youtube.com/watch?v=5krMRJRKiDY)
+
+[![Certifcate Dapp](https://img.youtube.com/vi/5krMRJRKiDY/0.jpg)](https://www.youtube.com/watch?v=5krMRJRKiDY)
 
 ## 📧 Contact
 
