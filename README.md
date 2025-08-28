@@ -1,108 +1,59 @@
-# Certificate DApp
+Certificate DApp
+The Certificate DApp is a decentralized application that provides a secure, transparent, and tamper-proof way to issue and verify certificates on the Ethereum blockchain. By leveraging smart contracts, this DApp guarantees the integrity and authenticity of certificates, eliminating fraud and manual verification bottlenecks. The frontend is built with React.js, and the smart contract is implemented using Solidity.
 
-The **Certificate DApp** is a decentralized application that allows the issuance and verification of certificates securely on the blockchain. This DApp leverages **Ethereum** blockchain technology and **smart contracts** to ensure the integrity and authenticity of issued certificates. Built using **React** for the frontend and **Solidity** for the smart contract, this project ensures that certificate data remains tamper-proof and accessible to everyone.
+✨ Features
+Issue Certificates: Exclusively the admin account (smart contract deployer) can issue certificates via MetaMask.
 
-## ✨ Features
+Verify Certificates: Anyone can verify issued certificates by connecting their MetaMask wallet.
 
-- **Issue Certificates:** Only the admin account (who deployed the smart contract) can issue new certificates by connecting to MetaMask.
-- **View Certificates:** Anyone can view issued certificates by connecting their MetaMask wallet.
-- **Blockchain Storage:** All certificate details are stored on the blockchain, ensuring they are secure, immutable, and verifiable.
-- **MetaMask Integration:** Connect your MetaMask wallet to interact with the DApp. Ensure you're on the correct network to interact with the deployed smart contract.
+Immutable Storage: All certificate data is stored permanently on the blockchain, ensuring security and transparency.
 
-## 🚀 Getting Started
+MetaMask Integration: Seamlessly connect with MetaMask to interact with the DApp and ensure engagement with the correct Ethereum network.
 
-To get the Certificate DApp up and running on your local machine, follow these steps:
+🚀 Getting Started
+Prerequisites
+Node.js installed
 
-### Prerequisites
+MetaMask installed and configured
 
-Ensure you have **Node.js**, **MetaMask**, and a preferred smart contract deployment tool installed.
+Preferred Ethereum smart contract deployment tool (Remix, Hardhat, Truffle, etc.)
 
-### Smart Contract Deployment
+Deployment
+Deploy the Cert.sol smart contract located in the contracts folder using your preferred method.
 
-1. **Deploy the Smart Contract:**
+Copy the contract ABI (from the compiled Cert.json) to the src/scdata/Cert.json file.
 
-   - Deploy the `Cert.sol` smart contract located in the `contracts` folder using your preferred deployment application (e.g., **Hardhat**, **Truffle**, **Remix**, etc.).
+Paste the deployed contract address into src/scdata/deployed_addresses.json.
 
-   - After deploying, copy the contract ABI from the generated `Cert.json` file. Depending on your deployment tool, this file will be generated in the corresponding `artifacts` or `build` folder.
+Installation and Running
+bash
+git clone https://github.com/akhilkailas017/Certificate-dApp.git
+cd Certificate-DApp
+npm install
+npm run dev
+Open the app in your browser and connect your MetaMask wallet on the network where the contract is deployed.
 
-   - Paste the ABI into the `Cert.json` file located in the `src/scdata` folder of your project.
+Admin users can now issue certificates; others can verify them instantly.
 
-   - Copy the deployed contract address and paste it into the `deployed_addresses.json` file in the `src/scdata` folder.
+🔗 MetaMask Connection
+Only the admin account can issue certificates.
 
-### Installation
+Any user can verify certificates after connecting their wallet.
 
-2. **Clone the repository:**
+🛠️ Tech Stack
+Frontend: React.js
 
-   ```bash
-   git clone https://github.com/akhilkailas017/Certificate-dApp.git
-   cd certificate-dapp
-   ```
+Blockchain: Ethereum
 
-3. **Install the dependencies:**
+Smart Contract: Solidity
 
-   ```bash
-   npm install
-   ```
+Wallet: MetaMask
 
-4. **Start the development server:**
+👤 Admin Access
+The connecting wallet that deploys the smart contract is the admin with exclusive issuance rights.
 
-   ```bash
-   npm run dev
-   ```
-
-5. **Connect MetaMask:**
-   - Open MetaMask in your browser.
-   - Connect to the correct network where the smart contract is deployed.
-
-6. **Done!** Now you can start issuing and viewing certificates on the blockchain.
-
-## 🔗 Connecting to MetaMask
-
-- Before issuing or viewing certificates, make sure to connect your MetaMask wallet.
-- Only the **admin account** (the account that deployed the smart contract) can issue certificates.
-- Any connected user can view the issued certificates.
-
-## 📜 Smart Contract Details
-
-- **Technology Used:** React, Solidity
-- **Smart Contract Deployment:** Can be deployed using **Hardhat**, **Truffle**, **Remix**, or any preferred application.
-- **Smart Contract ABI and Address:** 
-  - ABI: Stored in `src/scdata/Cert.json`.
-  - Address: Stored in `src/scdata/deployed_addresses.json`.
-
-## 👤 Admin Access
-
-- The account that deploys the smart contract becomes the **admin**. This account has exclusive rights to issue certificates.
-- Ensure that your MetaMask wallet is connected to the admin account to access the certificate issuance page.
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React.js
-- **Blockchain:** Ethereum
-- **Smart Contract Language:** Solidity
-- **Wallet Integration:** MetaMask
-
-## 📝 Usage
-
-1. **Issue Certificate:**
-   - Navigate to the "Issue Certificate" page.
-   - Ensure you're connected to MetaMask as the admin.
-   - Fill in the certificate details and click "Issue".
-
-2. **View Certificate:**
-   - Navigate to the "View Certificate" page.
-   - Connect to MetaMask with any account.
-   - Enter the certificate ID to view its details on the blockchain.
-
-## 🎥 Demo Video
-
-
-[![Certifcate Dapp](https://img.youtube.com/vi/5krMRJRKiDY/0.jpg)](https://www.youtube.com/watch?v=5krMRJRKiDY)
-
-## 📧 Contact
-
-For any questions or issues, please contact [akhilkailas2001@gmail.com](mailto:akhilkailas2001@gmail.com).
-
-## 📜 License
-
+📜 License
 This project is licensed under the MIT License.
+
+📧 Contact
+For help or questions, contact varshneysumrit@gmail.com.
