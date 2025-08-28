@@ -27,7 +27,7 @@ Paste the deployed contract address into src/scdata/deployed_addresses.json.
 
 Installation and Running
 bash
-git clone https://github.com/akhilkailas017/Certificate-dApp.git
+git clone https://github.com/SumritVarshney/Certificate-Verification.git
 cd Certificate-DApp
 npm install
 npm run dev
