@@ -26,11 +26,13 @@ Copy the contract ABI (from the compiled Cert.json) to the src/scdata/Cert.json 
 Paste the deployed contract address into src/scdata/deployed_addresses.json.
 
 Installation and Running
+--
 bash
 git clone https://github.com/SumritVarshney/Certificate-Verification.git
 cd Certificate-DApp
 npm install
 npm run dev
+--
 Open the app in your browser and connect your MetaMask wallet on the network where the contract is deployed.
 
 Admin users can now issue certificates; others can verify them instantly.
